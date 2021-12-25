@@ -20,12 +20,17 @@
 }
 
 .modal {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
 
     padding: 40px;
-    width: 450px;
+    max-width: 450px;
+    
+    @media screen and (min-width: 480px) {
+        position: absolute;
+        width: 450px;
+    }
 
     @media screen and (min-width: 1200px) {
         width: 528px;
